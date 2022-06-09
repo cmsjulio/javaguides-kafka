@@ -74,3 +74,16 @@ The first message gets an offset zero. The next one receives one and so on.
 A consumer group contains one or more consumers working together to process the messages.
 
 ![img.png](images/img2.png)
+
+
+## Spring Boot Framework and Kafka
+
+Spring boot simplifies Kafka producer and consumer configuration via autoconfiguration. 
+
+We do not have to write Java configuration code to configure Kafka.
+
+We can check its spring documentation at https://docs.spring.io/spring-kafka/reference/html/.
+
+Without spring boot there is lots of boilerplate configuration code to be written.
+
+We configure Kafka broker in our application.properties file.
