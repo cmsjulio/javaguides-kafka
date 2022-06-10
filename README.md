@@ -87,3 +87,14 @@ We can check its spring documentation at https://docs.spring.io/spring-kafka/ref
 Without spring boot there is lots of boilerplate configuration code to be written.
 
 We configure Kafka broker in our application.properties file.
+
+
+## Kafka Producer and Consumer for JSON Serializer and Deserializer
+
+Apache Kafka stores and transports byte[].
+
+There is a number of built-in serializers and deserializers but none of them supports JSON.
+
+Spring Kafka created a JsonSerializer and JsonDeserializer that can be used to convert Java Objects to and from JSON.
+
+We configure it in the applications.properties file -- value serializer and deserializer.
