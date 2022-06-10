@@ -13,4 +13,13 @@ public class KafkaTopicConfig {
     return TopicBuilder.name("javaguides")
       .build();
   }
+
+  /*
+  we must create a new topic as the previous consumer would be expecting a String message, rather than a Json one.
+   */
+  @Bean
+  public NewTopic javaguidesJsonTopic(){
+    return TopicBuilder.name("javaguides_json")
+      .build();
+  }
 }
